@@ -1,23 +1,20 @@
-/** @type {import('next').NextConfig} */
+const isProd = process.env.NODE_ENV === "production";
+const assetPrefix = isProd ? "/aboutme/" : "";
 
-// Determine if we're in production (GitHub Pages export)
-const isProd = process.env.NODE_ENV === 'production';
-// Use '/aboutme' basePath on prod, none locally
-const basePath = isProd ? '/aboutme' : '';
+module.exports = {
+  reactStrictMode: true,
 
-const nextConfig = {
+  // only add this prefix to your _next/ URLs
+  assetPrefix,
+
   images: {
     deviceSizes: [640, 750, 828, 1080, 1200, 1920, 2048, 3840],
     loader: "akamai",
     path: "",
   },
-  reactStrictMode: true,
-  basePath,
-  assetPrefix: isProd ? '/aboutme/' : '',
-  // Expose basePath to the client
+
+  // expose for your <Avatar src={prefix + "/..."} />
   env: {
-    NEXT_PUBLIC_BASE_PATH: basePath,
+    NEXT_PUBLIC_BASE_PATH: isProd ? "" : "",
   },
 };
-
-module.exports = nextConfig;
