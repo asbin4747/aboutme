@@ -44,7 +44,7 @@ jobs:
       - name: Disable Jekyll
         run: echo "nojekyll" > out/.nojekyll
       - name: Deploy to GitHub Pages
-        uses: asbin4747/github-pages-deploy-action@v4
+        uses: JamesIves/github-pages-deploy-action@v4
         with:
           branch: gh-pages
           folder: out
