@@ -1,7 +1,9 @@
 /** @type {import('next').NextConfig} */
 
-// Use NEXT_PUBLIC_BASE_PATH env var for both dev and production
-const basePath = process.env.NEXT_PUBLIC_BASE_PATH || "";
+// Determine if we're in production (GitHub Pages export)
+const isProd = process.env.NODE_ENV === 'production';
+// Use '/aboutme' basePath on prod, none locally
+const basePath = isProd ? '/aboutme' : '';
 
 const nextConfig = {
   images: {
@@ -10,10 +12,11 @@ const nextConfig = {
     path: "",
   },
   reactStrictMode: true,
-  basePath: basePath,
+  basePath,
   assetPrefix: basePath,
+  // Expose basePath to the client
   env: {
-    NEXT_PUBLIC_BASE_PATH: basePath
+    NEXT_PUBLIC_BASE_PATH: basePath,
   },
 };
 
