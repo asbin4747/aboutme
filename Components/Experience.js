@@ -4,6 +4,7 @@ import experienceData from "./ExperienceData.json";
 import { useRouter } from 'next/router';
 
 export default function Experience() {
+  const prefix = process.env.NEXT_PUBLIC_BASE_PATH || '';
   const router = useRouter();
 
   const handleClick = (e) => {
@@ -27,11 +28,10 @@ export default function Experience() {
             key={idx}
             onClick={handleClick}
             className="bg-white rounded-xl shadow-lg hover:shadow-2xl transition p-6 cursor-pointer flex flex-col items-center text-center"
-          >
-            <div className="-mt-12 mb-4">
+          >            <div className="-mt-12 mb-4">
               <Avatar
                 alt={exp.cardTitle.company}
-                src={exp.cardTitle.imgSource}
+                src={prefix + exp.cardTitle.imgSource}
                 sx={{
                   height: 96,
                   width: 96,

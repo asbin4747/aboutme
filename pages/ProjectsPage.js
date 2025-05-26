@@ -90,11 +90,14 @@ export default function AboutPage() {
           <strong>Tech stack:</strong> Flutter, Flask, Kafka, MongoDB, MySQL, Stanford NLP, Java, Python, Dart, SQL
         </div>
       </section>
-      <section className="project_card">
-        <div className="project_card_heading">
+      <section className="project_card">        <div className="project_card_heading">
           <h2>Software Validation And Testing</h2>
           <Link href="https://github.com/asbin4747/washer-chess">
-            <GitHub fontSize="medium" />
+            <GitHub 
+              fontSize="medium" 
+              onClick={() => handleGitHubClick('washer-chess')}
+              style={{ cursor: 'pointer' }}
+            />
           </Link>
         </div>
 
