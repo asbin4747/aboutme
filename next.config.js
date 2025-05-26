@@ -1,19 +1,16 @@
-const isProd = process.env.NODE_ENV === "production"
-const basePath = isProd ? "/aboutme" : ""
-const assetPrefix = isProd ? "/aboutme/" : ""
+const isProd = process.env.NODE_ENV === 'production'
 
 module.exports = {
   reactStrictMode: true,
-  basePath,
-  assetPrefix,
+  assetPrefix: isProd ? '/aboutme/' : '',
 
   images: {
     deviceSizes: [640,750,828,1080,1200,1920,2048,3840],
-    loader: "akamai",
-    path: "",
+    loader: 'akamai',
+    path: '',
   },
 
   env: {
-    NEXT_PUBLIC_BASE_PATH: basePath,
+    NEXT_PUBLIC_BASE_PATH: isProd ? '/aboutme' : '',
   },
 }
