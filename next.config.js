@@ -2,7 +2,9 @@ const isProd = process.env.NODE_ENV === 'production'
 
 module.exports = {
   reactStrictMode: true,
-  assetPrefix: isProd ? '/aboutme/' : '',
+  assetPrefix: isProd ? '/aboutme' : '',
+  basePath: isProd ? '/aboutme' : '',
+  trailingSlash: true,
 
   images: {
     deviceSizes: [640,750,828,1080,1200,1920,2048,3840],
