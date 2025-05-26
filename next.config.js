@@ -1,6 +1,7 @@
 /** @type {import('next').NextConfig} */
 
-const isProd = process.env.NODE_ENV !== "production";
+// Use NEXT_PUBLIC_BASE_PATH env var for both dev and production
+const basePath = process.env.NEXT_PUBLIC_BASE_PATH || "";
 
 const nextConfig = {
   images: {
@@ -9,8 +10,11 @@ const nextConfig = {
     path: "",
   },
   reactStrictMode: true,
-  basePath: isProd ? "" : "/aboutme",
-  assetPrefix: isProd ? "" : "/aboutme",
+  basePath: basePath,
+  assetPrefix: basePath,
+  env: {
+    NEXT_PUBLIC_BASE_PATH: basePath
+  },
 };
 
 module.exports = nextConfig;
