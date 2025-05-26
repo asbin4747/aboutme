@@ -1,0 +1,67 @@
+[
+    {
+        "cardTitle": {
+            "position": "Software Engineer",
+            "company":"General Motors",
+            "location": "Austin, TX",
+            "date": "March, 2021 - Present",
+            "imgSource":"/general-motors.png"
+        },
+        "jobDescription": {
+            "description": "Working as a software developer within the eCommerce team to support the customer sites and business facing applications.",
+            "jobDuties" : [
+            {"jobDuty" : "Developed a high-performance GM eCommerce platform, driving $1M+ in monthly revenue. Built with React, Redux-Saga, React Query, Axios, Webpack, and Node.js + middleware, while optimizing performance via responsive design, lazy loading, critical CSS, image optimization, and code splitting."},
+            {"jobDuty" : "Developed a fault-tolerant, scalable Java/Spring Boot system ingesting 10k+ daily orders from external systems using Kafka's reliable, asynchronous messaging."},
+            {"jobDuty" : "Designed and implemented a highly reliable messaging-based integration architecture utilizing IBM MQ and JMS integrating external vendors systems with IBM OMS, significantly streamlining operations."},
+            {"jobDuty" : "Led the re-architecture of two e-commerce platforms to a unified platform using Java/Spring Boot, Node.js, serving 100k+ daily users and achieving significant gains in performance, stability, and maintainability."},
+            {"jobDuty" : "Migrated legacy dealer login to a single sign-on system using Azure AD, SAML 2.0, HCL Commerce, and Redux Saga, reducing authentication time by 30% and improving security."},
+            {"jobDuty" : "Built a centralized order reconciliation platform with React/Redux and Node.js/Spring Boot to enhance dealer visibility into financials, increasing operational efficiency and user engagement."},
+            {"jobDuty" : "Built SQL monitors to integrate into the GM monitoring system, analyzing production data for real-time failed order detection and achieving a 30% reduction in remediation time through automated alerting."},
+            {"jobDuty" : "Implemented GitHub Actions for CI/CD pipelines, and scanning tools such as Dependabot and CodeQL."},
+            {"jobDuty" : "Participated in Agile ceremonies, including daily stand-ups, sprint planning, and retrospectives, to ensure alignment with team goals and continuous improvement."},
+            {"jobDuty" : "Developed automated test scripts using Selenium WebDriver and Playwright."},
+            {"jobDuty" : "Trained new hires to get familiar with the eCommerce, and development process at GM, refactored old code base to deploy new features, and participated in code reviews to improve code quality and efficiency." },
+            {"jobDuty": "Experience working with JavaScript and React to create shareable components, worked with React hooks to create interactive UI pages for product searches, and used Redux to manage and update application state by creating stores and actions."},
+            {"jobDuty": "Implemented responsive web design techniques using flexbox and SaaS; used Axios to make CRUD and async requests to retrieve and update data; used Node.js to generate authentication tokens; also managed session storage via JavaScript cookies."},
+            {"jobDuty": "Experience working with Order Management System (OMS) to facilitate eCommerce orders; created Java classes within OMS to support business stories; integrated IBM Sterling and wrote SQL queries to retrieve and update order data."},
+            {"jobDuty": "Worked with QE to write automated test scripts in Java using Selenium; helped identify and fix bugs; addressed software impacts; and documented test defects and procedures."},
+            {"jobDuty": "Worked with DevOps to create pipelines for deployments, create repositories and branches for releases, and support deployment plans."}
+            ]
+        }
+    },
+       {
+        "cardTitle": {
+            "position": "Software Developer",
+            "company": "Tata Consultancy Services",
+            "location": "Los Angeles, CA",
+            "date": "August 2020 - March 2021",
+            "imgSource": "/tcs.png"
+        },
+        "jobDescription": {
+            "description": "Built internal Java/Spring Boot applications to automate processes, improve developer productivity, and reduce technical debt.",
+            "jobDuties": [
+                { "jobDuty": "Built and launched internal Java/Spring Boot applications designed to automate internal processes, improving developer productivity and operational efficiency." },
+                { "jobDuty": "Refactored performance-critical sections of legacy Java code, applying best practices to improve readability and significantly reduce technical debt." },
+                { "jobDuty": "Ensured application reliability and code quality by writing unit tests using JUnit and Mockito." },
+                { "jobDuty": "Collaborated on architectural design and created detailed documentation for new system features." }
+            ]
+        }
+    },
+   {
+            "cardTitle": {
+                "position": "Software Developer Intern",
+                "company":"CetalDeveSolutions",
+                "location": "Los Angeles, CA",
+                "date": "May, 2019 - August, 2019",
+                "imgSource":"/cetaldevelogo.png"
+            },
+            "jobDescription": {
+                "description": "Worked in agile environment, collaborated with senior developers on business stories, and reworked existing codebase",
+                "jobDuties": [
+                    {"jobDuty" : "Worked in agile environment, collaborated with senior developers on business stories."},
+                    {"jobDuty" : "Worked with senior developers to create web services using REST API, used Junit for writing unit tests, and LOG4J for debugging and testing."},
+                    {"jobDuty" : "Worked with senior developers to document the REST API, created mock designs usign Figma for business stories, and participated in daily sprints."}
+                ]
+            }
+        }
+]

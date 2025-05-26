@@ -1,5 +1,5 @@
 import React from "react";
-import ExperienceCard from "./Components/ExperienceCard";
+import ExperienceCard from "../Components/ExperienceCard";
 
 export default function ExperiencePage() {
   return (

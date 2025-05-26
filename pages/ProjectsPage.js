@@ -5,7 +5,32 @@ import { GitHub } from "@mui/icons-material";
 export default function AboutPage() {
   return (
     <div className="flex flex-col items-center p-4">
-
+      <section className="project_card">
+        <div className="project_card_heading">
+          <h2>Graph RAG Agent</h2>
+        </div>
+        <div className="project_description">
+          <p>
+            Implemented an AI chatbot by creating a data pipeline to extract clinical notes from PDF documents using LangChain, built a knowledge graph with Neo4j using Cypher queries, and implemented a question–answer system leveraging the Llama3 LLM to synthesize concise patient summaries and facilitate record retrieval via Cypher and Python.
+          </p>
+        </div>
+        <div className="project_techstack mt-2">
+          <strong>Tech stack:</strong> Python, LangChain, Neo4j, Cypher, Llama3
+        </div>
+      </section>
+      <section className="project_card">
+        <div className="project_card_heading">
+          <h2>Deep Learning AI Agent for Supertux Ice Hockey</h2>
+        </div>
+        <div className="project_description">
+          <p>
+            Developed an agent for the Supertux ice hockey game employing computer vision and fully convolutional neural networks (FCNN) for real-time puck detection. Built a custom controller and robust data pipelines to analyze image batches, accurately predict puck location, and optimize goal navigation strategies using Python and PyTorch.
+          </p>
+        </div>
+        <div className="project_techstack mt-2">
+          <strong>Tech stack:</strong> Python, PyTorch, OpenCV, FCNNs,
+        </div>
+      </section>
       <section className="project_card">
         <div className="project_card_heading">
           <h2>Amazon Clone React</h2>
@@ -27,11 +52,14 @@ export default function AboutPage() {
             This project is built using React, Next.js, and TailwindCSS.
           </p>
         </div>
+        <div className="project_techstack mt-2">
+          <strong>Tech stack:</strong> React, Next.js, TailwindCSS, Stripe API, Google Auth, JavaScript
+        </div>
       </section>
 
       <section className="project_card">
         <div className="project_card_heading">
-          <h2 >OFF-TOP</h2>
+          <h2>OFF-TOP</h2>
           <Link href="https://github.com/Off-Top-App">
             <GitHub fontSize="medium" />
           </Link>
@@ -58,8 +86,10 @@ export default function AboutPage() {
             Stanford NLP, and languages used were Java, Python, Dart, and SQL.
           </p>
         </div>
+        <div className="project_techstack mt-2">
+          <strong>Tech stack:</strong> Flutter, Flask, Kafka, MongoDB, MySQL, Stanford NLP, Java, Python, Dart, SQL
+        </div>
       </section>
-
       <section className="project_card">
         <div className="project_card_heading">
           <h2>Software Validation And Testing</h2>
@@ -78,8 +108,10 @@ export default function AboutPage() {
             for the tests. 
           </p>
         </div>
+        <div className="project_techstack mt-2">
+          <strong>Tech stack:</strong> Java Swing, JUnit4, Mockito, JaCoCo, PitTest
+        </div>
       </section>
-
       <section className="project_card">
         <div className="project_card_heading">
           <h2>Calendroid</h2>
@@ -91,6 +123,9 @@ export default function AboutPage() {
             other daily reminders. This project was developed to get familiarity with android development and the primary language
             used was Java. This project also involved the use of Android Studio and SQLite to store the data.
           </p>
+        </div>
+        <div className="project_techstack mt-2">
+          <strong>Tech stack:</strong> Java, Android Studio, SQLite
         </div>
       </section>
     </div>

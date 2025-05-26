@@ -31,7 +31,7 @@
   }
 
   .project_card {
-    @apply flex flex-col justify-center max-w-screen-lg border-4 m-4 p-4 border-r-8 border-cyan-200
+    @apply flex flex-col justify-center max-w-screen-lg border-4 m-4 p-4 border-r-8 border-cyan-200 bg-white text-black
   }
 
   .project_card_heading {

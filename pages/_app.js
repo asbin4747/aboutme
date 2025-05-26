@@ -1,5 +1,5 @@
 import "../styles/globals.css";
-import Layout from "./Components/Layout";
+import Layout from "../Components/Layout";
 import '../node_modules/@fortawesome/fontawesome-svg-core/styles.css';
 import { config } from '../node_modules/@fortawesome/fontawesome-svg-core';
 config.autoAddCss = false;

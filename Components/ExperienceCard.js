@@ -14,12 +14,12 @@ export default function ExperienceCard() {
           <div className="flex flex-col p-3">
             <div className="flex flex-row border-4 p-2 space-x-4 bg-slate-200">
               <div>
-                <img
+                <Image
                   alt=""
-                  objectfit="contain"
                   src={prefix + experience.cardTitle.imgSource}
                   width={100}
                   height={100}
+                  style={{ objectFit: "contain" }}
                 />
               </div>
               <div>
